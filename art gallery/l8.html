@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>LoginForm</title>
+  <link rel="stylesheet" type="text/css" href="s.css">
+  <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+<script>
+function reqfield()
+{
+var x=document.forms["myform"]["t1"].value;
+var y=document.forms["myform"]["t2"].value;
+if(x==""||y=="")
+{
+alert("This field can't be empty");
+return false;
+}
+return true;
+}
+</script>
+ </head>
+ <body>
+  <div class="bgimg">
+   <div class="centerdiv">
+ <img src="avatar1.png" id="profilepic">
+    <h2>user login</h2>
+    <form action="d8.html" name="myform" onsubmit="return reqfield()">>
+     <div>
+      <input type="text" name="t1" class="inputbox" placeholder="Username">
+     </div>
+     <br>
+     <div>
+      <input type="Password" name="t2" class="inputbox" placeholder="Password">
+     </div>
+<br>
+     <div>
+      <button type="submit"> LOGIN </button>
+     </div>
+    </form>
+   </div>
+  </div>
+ </body>
+</html>
